@@ -12,6 +12,10 @@ span {
   background-color: #edb882;
 }
 
+.hr {
+  border-top: 5px solid #7d4712;
+}
+
 .vertical-middle {
   position: relative;
   top: 50%;
