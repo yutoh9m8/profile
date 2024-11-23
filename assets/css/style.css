@@ -12,6 +12,10 @@ span {
   background-color: #edb882;
 }
 
+.hr {
+  border-top: 5px solid #7d4712;
+}
+
 .vertical-middle {
   position: relative;
   top: 50%;
@@ -57,4 +61,32 @@ span {
   font-family: "Courier New";
   font-weight: bold;
   font-size: 24px;
+}
+
+.balloon-parent {
+  position: relative;
+}
+.balloon-parent:hover .balloon {
+  display: inline;
+}
+.balloon {
+  position: absolute;
+  text-align: left;
+  color: white;
+  display: none;
+  background-color: black;
+  width: 350px;
+  left: 75%;
+  bottom: 100%;
+  margin-bottom: 12px;
+  font-size: 80%;
+}
+.balloon:after {
+  position: absolute;
+  border-top: 12px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -12px;
+  left: 50%;
+  content: "";
 }
